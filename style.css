@@ -30,7 +30,7 @@ body {
     color: #fff;
     display: inline-block;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     position: relative;
 }
@@ -106,10 +106,100 @@ nav ul a{
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    padding-top: 60px;
+}
+
+.hero-section .left h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    color: #fff;
+}
+
+.hero-section .left p{
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: #fff;
+    margin-bottom: 30px;
+    width: 457px;
+}
+
+.hero-section .left{
+    flex: 1;
+
+}
+
+.hero-section .right{
+    align-self: flex-end;
+}
+
+.hero-section .right img{
+    height: 520px;
+    vertical-align: middle;
 }
 
 /* Achievment-cards */
 
-.achievment-cards {
-    display: none;
+.achievment-card{
+    position: absolute;
+    min-width: 200px;
+}
+
+.achievment-card .content{
+    border-radius: 24px;
+    background: #fff;
+    padding: 8px 32px;
+    z-index: 10;
+    position: relative;
+}
+
+.achievment-card.students-enrolled{
+    left: 49%;
+    top: 270px;
+}
+
+.achievment-card h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--dark-blue-color);
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.achievment-card p{
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--dark-blue-color);
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.achievment-card .bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #6f7dfb 0%, #3b448f 100%);
+    border-radius: 24px;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+
+}
+
+.achievment-card.overall-rating{
+    left: 47%;
+    top: 470px;
+    min-width: 200px;
+}
+
+.achievment-card .content div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
